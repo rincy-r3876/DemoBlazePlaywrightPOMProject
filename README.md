@@ -13,24 +13,17 @@ This project demonstrates scalable test architecture, CI integration, and automa
 
 This framework automates core user flows of the DemoBlaze e-commerce application, focusing on:
 
-Authentication validation
-
-UI visibility checks
-
-Session handling (Login / Logout)
-
-Stable locator strategies
-
-CI-based automated execution
+>> Authentication validation
+>> UI visibility checks
+>> Session handling (Login / Logout)
+>> Stable locator strategies
+>> CI-based automated execution
 
 The framework is designed to be:
 
 ✅ Scalable
-
 ✅ Maintainable
-
 ✅ CI/CD Ready
-
 ✅ Industry-standard compliant
 
 🏗️ Architecture & Design Pattern
@@ -38,20 +31,15 @@ The framework is designed to be:
 
 Each page is abstracted into a reusable class that:
 
-Encapsulates locators
-
-Encapsulates page actions
-
-Improves readability
-
-Reduces duplication
-
-Enhances maintainability
+✅Encapsulates locators
+✅Encapsulates page actions
+✅Improves readability
+✅Reduces duplication
+✅Enhances maintainability
 
 This approach ensures clean separation between:
 
 Test Logic
-
 Page Interactions
 
 Configuration
@@ -77,12 +65,14 @@ DemoBlazePlaywrightPOMProject
 
 🛠️ Tech Stack
 Tool	Purpose
-Playwright	UI Automation
-JavaScript	Test scripting
-Node.js	Runtime environment
-GitHub Actions	CI/CD
-HTML Reporter	Test reporting
+✅Playwright	UI Automation
+✅JavaScript	Test scripting
+✅Node.js	Runtime environment
+✅GitHub Actions	CI/CD
+✅HTML Reporter	Test reporting
+
 ⚙️ Setup & Installation
+
 1️⃣ Clone Repository
 git clone https://github.com/rincy-r3876/DemoBlazePlaywrightPOMProject.git
 cd DemoBlazePlaywrightPOMProject
@@ -103,33 +93,23 @@ npx playwright show-report
 ✔ Login Feature
 
 Successful login validation
-
 Welcome username visibility
-
 Session validation
-
 ✔ Home Page Feature
-
 Logout link visibility
-
 Post-login UI validation
 
 🔄 Continuous Integration (CI)
 
 This project integrates with GitHub Actions to automatically:
-
 Install dependencies
-
 Install Playwright browsers
-
 Execute test suite
-
 Generate reports
 
 Fail build if:
 
 Tests fail
-
 .only is committed (via forbidOnly)
 
 Workflow file:
@@ -155,23 +135,16 @@ describe.only()
 Ensuring:
 
 Full test suite always runs in CI
-
 No partial test execution in production pipelines
 
 🚀 Key Automation Best Practices Implemented
 
 Page Object Model (POM)
-
 Explicit waits over hard waits
-
 Centralized configuration
-
 CI-driven execution
-
 Clean locator strategies
-
 Structured test organization
-
 Scalable folder architecture
 
 📈 Scalability Potential
@@ -179,20 +152,14 @@ Scalable folder architecture
 This framework can be extended to include:
 
 Data-driven testing
-
 API integration testing
-
 Parallel cross-browser execution
-
 Docker containerization
-
 Advanced reporting (Allure)
-
 Environment-based configurations
-
 Test tagging & selective execution
 
 👩‍💻 Author
 
-Rincy
-QA Automation Engineer | Playwright Enthusiast
+Rincy Mol R
+QA  | Playwright Enthusiast
