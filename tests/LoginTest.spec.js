@@ -10,14 +10,14 @@ test.beforeEach(async ({page})=>
     await login.openLoginModal();
 })
 
-test.only('Successful Login',async({page})=>
+test('Successful Login',async({page})=>
 {
 
       await login.Login('Rincy','test@123')
       await page.waitForTimeout(3000)
 })
 
-test.skip('Unsuccessful Login using Invalid Credentials',async({page})=>
+test('Unsuccessful Login using Invalid Credentials',async({page})=>
 {
 
     page.once('dialog', async dialog => {
@@ -27,7 +27,7 @@ test.skip('Unsuccessful Login using Invalid Credentials',async({page})=>
       await login.Login('Rincyyy','test@123333');
 })
 
-test.skip('UnSuccessful Login using empty credentials',async({page})=>{
+test('UnSuccessful Login using empty credentials',async({page})=>{
 
 await page.waitForTimeout(3000);
 

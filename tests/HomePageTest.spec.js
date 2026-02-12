@@ -13,18 +13,18 @@ let login;
     await login.Login('Rincy','test@123')
  })
 
-test.skip('Title & URL Verification',async({page})=>{
+test('Title & URL Verification',async({page})=>{
    
     await expect(page).toHaveURL('https://www.demoblaze.com/index.html');
     await expect(page).toHaveTitle('STORE');
 })
 
 
- test.skip('Display product count and product names',async({page}) => {
+ test('Display product count and product names',async({page}) => {
     await home.addToCart("Nexus 6")
   })
 
-  test.only('Verify logout link and welcome username visibility',async({page})=>{
+  test('Verify logout link and welcome username visibility',async({page})=>{
     
     await page.waitForTimeout(3000);
     await expect(home.LogoutLink).toBeVisible();
